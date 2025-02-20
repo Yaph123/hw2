@@ -1,0 +1,13 @@
+<products>
+book
+00001010 00001111
+0.11
+5
+111-000000000-1
+A. Robot
+</products>
+<users>
+aturing 100.00 0
+johnvn 50.00 1
+adal 120.00 1
+</users>

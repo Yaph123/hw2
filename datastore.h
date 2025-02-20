@@ -17,7 +17,7 @@
 
 
 class DataStore {
-public:
+ public:
     virtual ~DataStore() { }
 
     /**

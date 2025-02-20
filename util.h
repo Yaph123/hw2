@@ -4,30 +4,38 @@
 #include <string>
 #include <iostream>
 #include <set>
+#include <iterator>
+#include <algorithm>
 
 
 /** Complete the setIntersection and setUnion functions below
  *  in this header file (since they are templates).
  *  Both functions should run in time O(n*log(n)) and not O(n^2)
  */
+
+
 template <typename T>
 std::set<T> setIntersection(std::set<T>& s1, std::set<T>& s2)
 {
-
-
-
-
-
-}
+  std::set<T> newSet;
+  std::set_intersection(s1.begin(),s1.end(), s2.begin(),s2.end(),
+                    inserter(newSet,newSet.begin()));
+  return newSet;
+  }
+  
 template <typename T>
 std::set<T> setUnion(std::set<T>& s1, std::set<T>& s2)
 {
+  
+  std::set<T> newSet;
+  std::set_union(s1.begin(),s1.end(),s2.begin(), s2.end(),
+              inserter(newSet,newSet.begin()));
 
-
-
+  return newSet;
 
 
 }
+
 
 /***********************************************/
 /* Prototypes of functions defined in util.cpp */
