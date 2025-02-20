@@ -9,9 +9,9 @@
 #include "db_parser.h"
 #include "product_parser.h"
 #include "util.h"
-#include "Book.h"
-#include "Clothing.h"
-#include "Movie.h"
+#include "book.h"
+#include "clothing.h"
+#include "movie.h"
 #include "datastore.h"
 #include "mydatastore.h"
 
